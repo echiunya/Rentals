@@ -1,0 +1,303 @@
+    * {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    background-color: rgb(255, 255, 255);
+}
+
+
+/* Header And Footer..... */
+
+nav {
+    background-color: lightgray;
+    border: 4px solid black;
+    border-radius: 0.5%;
+    margin: .0;
+    margin-bottom: 10px;
+    padding: 0 10px;
+    box-sizing: border-box;
+    overflow: auto;
+    text-align: center;
+    box-shadow: inset 0 0 50px 10px rgba(0, 0, 0, .8);
+    background: #4e7af3 url('../../Imgaes/pexels-david-mcbee-1546166.jpg');
+    background-repeat: no-repeat;
+    /* Do not repeat the image */
+    background-size: cover;
+    /* Resize the background image to cover the entire container */
+}
+
+.search-box {
+    width: 600px;
+    height: 25px;
+    margin-bottom: 10px;
+    border: solid black 2px;
+    border-radius: 5px 10px;
+}
+
+.search-button {
+    width: 300px;
+    height: 25px;
+    font-size: large;
+    border: solid black 2px;
+    border-radius: 5px 10px;
+    text-shadow: 0 3px 5px rgba(0, 0, 0, .8);
+    color: whitesmoke;
+    margin-bottom: 10px;
+}
+
+button:hover {
+    transform: scale(1.1);
+    transition: transform .1s;
+}
+
+nav h1 {
+    font-size: 5.625rem;
+    /* 90px/16px  */
+    color: rgba(255, 255, 255, 1);
+    text-transform: uppercase;
+    font-weight: normal;
+    line-height: 1.3;
+    text-shadow: 0 3px 5px rgba(0, 0, 0, .8);
+}
+
+.nav-li {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: inline-flex;
+    font-size: large;
+}
+
+nav li a {
+    display: inline;
+}
+
+nav a {
+    display: block;
+    padding: 8px;
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    text-align: center;
+}
+
+
+/* nav li {
+float: left;
+} */
+
+nav li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 16px;
+    text-decoration: none;
+}
+
+
+/* li a:hover {
+background-color: #555554;
+} */
+
+.zoom:hover {
+    transform: scale(1.2);
+    transition: transform .1s;
+}
+
+
+/* The Content Section */
+
+
+/* Classes */
+
+.article li {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+.sec-1 {
+    height: 400px;
+    margin: 5px;
+    padding: 0;
+    border: solid transparent;
+    border-radius: 5px 10px;
+    text-align: center;
+    float: right;
+    background: url('../../Imgaes/pexels-jeffrey-czum-3330118.jpg');
+    background-repeat: no-repeat;
+    /* Do not repeat the image */
+    background-size: cover;
+    /* Resize the background image to cover the entire container */
+}
+
+.sec-2 {
+    height: 400px;
+    margin: 5px;
+    padding: 0;
+    border: solid transparent;
+    border-radius: 5px 10px;
+    text-align: center;
+    float: left;
+    background: url('../../Imgaes/pexels-burst-545034.jpg');
+    background-repeat: no-repeat;
+    /* Do not repeat the image */
+    background-size: cover;
+    /* Resize the background image to cover the entire container */
+}
+
+.sec-1,
+.sec-2 {
+    width: 49%;
+    color: rgb(3, 0, 0);
+}
+
+.main-section {
+    overflow: auto;
+    margin-bottom: 15px;
+}
+
+.group:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+.article-div p li {
+    margin: 0;
+    padding: 0;
+}
+
+
+/* Comment Form */
+
+.f-div {
+    border: solid 3px grey;
+    margin: 5px;
+    padding: 10px;
+}
+
+.center {
+    margin: auto;
+    width: 50%;
+    border: 3px solid green;
+    padding: 10px;
+}
+
+
+/* Base Styles */
+
+
+/* Arrows */
+
+body {
+    margin: 20px 0 30px 0;
+    padding: 0;
+    background-color: white;
+}
+
+.arrow {
+    position: relative;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: inline-block;
+}
+
+.arrow span {
+    display: block;
+    width: 20px;
+    height: 20px;
+    border-bottom: 5px solid #3e3f3f;
+    border-right: 5px solid #3e3f3f;
+    transform: rotate(45deg);
+    margin: -15px;
+    animation: animate 2s infinite;
+    margin-bottom: -10px;
+    margin-top: 10px;
+}
+
+.arrow span:nth-child(2) {
+    animation-delay: -0.2s;
+}
+
+.arrow span:nth-child(3) {
+    animation-delay: -0.4s;
+}
+
+@keyframes animate {
+    0% {
+        opacity: 0;
+        transform: rotate(45deg) translate(-20px, -20px);
+    }
+    50% {
+        opacity: 1;
+    }
+    100% {
+        opacity: 0;
+        transform: rotate(45deg) translate(20px, 20px);
+    }
+}
+
+
+/* Style inputs with type="text", select elements and textareas */
+
+input[type=text],
+select,
+textarea {
+    width: 100%;
+    /* Full width */
+    padding: 12px;
+    /* Some padding */
+    border: 1px solid #ccc;
+    /* Gray border */
+    border-radius: 4px;
+    /* Rounded borders */
+    box-sizing: border-box;
+    /* Make sure that padding and width stays in place */
+    margin-top: 6px;
+    /* Add a top margin */
+    margin-bottom: 16px;
+    /* Bottom margin */
+    resize: vertical/* Allow the user to vertically resize the textarea (not horizontally) */
+}
+
+
+/* Style the submit button with a specific background color etc */
+
+input[type=submit] {
+    background-color: #000000;
+    color: rgb(250, 250, 250);
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+input[type=submit]:hover {
+    transform: scale(1.1);
+    transition: transform .1s;
+    /* When moving the mouse over the submit button, add a darker green color */
+    input[type=submit]:hover {
+        background-color: #f9fcfa;
+    }
+    /* Add a background color and some padding around the form */
+    .container {
+        border-radius: 5px;
+        background-color: black;
+        padding: 20px;
+        width: 300px;
+    }
+    form {
+        width: 49%;
+    }
+    .form-div {
+        margin-top: 200px;
+    }
